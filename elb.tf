@@ -1,5 +1,5 @@
 resource "aws_elb" "bar" {
-  name               = "raham-terraform-elb"
+  name               = "Moulali-terraform-elb"
   availability_zones = ["ap-south-1a", "ap-south-1b"]
 
   listener {
@@ -21,7 +21,7 @@ resource "aws_elb" "bar" {
   cross_zone_load_balancing = true
   idle_timeout              = 400
   tags = {
-    Name = "raham-tf-elb"
+    Name = "Moulali-tf-elb"
   }
 }
 
@@ -31,8 +31,8 @@ resource "aws_elb" "bar" {
   engine_version          = "5.7.mysql_aurora.2.11.2"
   availability_zones      = ["ap-south-1a", "ap-south-1b"]
   database_name           = "mydb"
-  master_username         = "raham"
-  master_password         = "Rahamshaik#444555"
+  master_username         = "moula"
+  master_password         = "Moulashaik#444555"
   backup_retention_period = 5
   preferred_backup_window = "07:00-09:00"
 }*/
